@@ -274,3 +274,12 @@ main li,main p,main a{overflow-wrap:anywhere}
 .pc-imglink{display:block}
 .postcard .pc-img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
 .postgrid{margin-top:1.4rem}
+
+.footer-grid{grid-template-columns:1.5fr 1fr 1.5fr 1fr 1fr}
+.foot-2col{columns:2;column-gap:18px}
+.foot-2col a{break-inside:avoid}
+@media(max-width:1100px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.footer-grid{grid-template-columns:1fr}}
+.footer-grid>*{min-width:0}
+.site-footer a{overflow-wrap:anywhere}
+@media(max-width:480px){.foot-2col{columns:1}}
